@@ -18,7 +18,7 @@ package com.ait.toolkit.hopscotch.client.resources;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.TextResource;
 
-public interface GwtTourResources extends ClientBundle {
+public interface HopScotchResources extends ClientBundle {
 
 	@Source("hopscotch.css")
 	TextResource css();

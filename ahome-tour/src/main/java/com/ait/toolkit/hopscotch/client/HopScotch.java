@@ -19,7 +19,7 @@ import java.util.Random;
 
 import com.ait.toolkit.core.client.Function;
 import com.ait.toolkit.core.client.Util;
-import com.ait.toolkit.hopscotch.client.resources.GwtTourResources;
+import com.ait.toolkit.hopscotch.client.resources.HopScotchResources;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -53,7 +53,7 @@ public class HopScotch {
 	 */
 	private static void load() {
 		if (!isLoaded()) {
-			GwtTourResources resources = GWT.create(GwtTourResources.class);
+			HopScotchResources resources = GWT.create(HopScotchResources.class);
 			Util.injectJs(resources.js());
 			Util.injectStyle(resources.css());
 		}
