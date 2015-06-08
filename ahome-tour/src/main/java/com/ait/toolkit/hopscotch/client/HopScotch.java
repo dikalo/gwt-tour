@@ -55,7 +55,7 @@ public class HopScotch {
 		if (!isLoaded()) {
 			HopScotchResources resources = GWT.create(HopScotchResources.class);
 			Util.injectJs(resources.js());
-			Util.injectStyle(resources.css());
+			Util.injectStyle(resources.css().getText().replaceAll("../img/sprite-green.png", resources.sprite().getSafeUri().asString()));
 		}
 	}
 

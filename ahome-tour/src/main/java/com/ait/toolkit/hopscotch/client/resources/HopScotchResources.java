@@ -16,14 +16,17 @@
 package com.ait.toolkit.hopscotch.client.resources;
 
 import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.resources.client.TextResource;
 
 public interface HopScotchResources extends ClientBundle {
 
-	@Source("hopscotch.css")
+	@Source("hopscotch.min.css")
 	TextResource css();
 
-	@Source("hopscotsch-0.1.2.min.js")
+	@Source("hopscotch.min.js")
 	TextResource js();
 
+	@Source("sprite-green.png")
+	ImageResource sprite();
 }
